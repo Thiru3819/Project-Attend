@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static',filename='/css/main.css') }}">
+<center> <img src="{{ url_for('static',filename='/images/logo.png') }}" style="width: 100px;"></center>
+
+
+
+<head>
+
+
+
+
+
+</head>
+
+<body>
+   
+    <table>
+        <tr>
+            <th>id</th>
+            <th>date</th>
+            <th>status</th>
+        </tr>
+         {% for val in data%}
+        <tr>
+
+            <td>{{val[1]}}</td>
+            <td>{{val[0]}}</td>
+            <td>{{val[2]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+
+
+</body>
+
+</html>

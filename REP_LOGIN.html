@@ -42,7 +42,7 @@
         <div class="head container-fluid text-center">
             <div class="name  p-5">
                 <h1
-                    style="font:800;font-family:serif; color:rgb(22, 22, 22);font-size:80px;text-shadow:0 0 rgb(6, 79, 173);">
+                    style="font:30vh;font-family:serif; color:rgb(22, 22, 22);font-size:80px;text-shadow:0 0 rgb(6, 79, 173);">
                     PT LEE CHENGALVARAYA NAICKER COLLEGE OF ENGINEERING AND TECHNOLOGY</h1>
             </div>
             <div>
@@ -70,13 +70,23 @@
     body {
         margin: 0;
         padding: 0;
-        height: 100%;
+        min-height: 100vh;
     }
 
     body {
         background: linear-gradient(128deg,rgb(168, 203, 214)
         ,rgb(71, 180, 223)
         );
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width: 768px) {
+        body {
+            background-attachment: scroll;
+            background-size: 100% 100%;
+        }
     }
 
 

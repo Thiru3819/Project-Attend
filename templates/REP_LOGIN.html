@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('static' filename='/assets/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='/assets/css/bootstrap.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
@@ -16,7 +16,7 @@
         <div class="nav_Bar m-2">
             <nav class="navbar navbar-expand-lg   rounded-5 p-2">
                 <div class="container-fluid ">
-                    <a class="navbar-brand text-dark" href="#"><img src="icons8-canteen-50.png"> LEE ATTENDANCE
+                    <a class="navbar-brand text-dark" href="#"><img style="width:40px;" src="{{url_for('static', filename='images/logo.png')}}"> LEE ATTENDANCE
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

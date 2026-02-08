@@ -10,17 +10,13 @@ result=dbcursor.fetchall()
     
 @app.route("/")
 def index():
-    return render_template('index.html')
-@app.route("/login")
-def login():
-    return render_template("register.html")
+    return render_template('index1.html')
+@app.route("/replogin")
+def replogin():
+    return render_template("REP_LOGIN.html")
 @app.route("/dashboard")
 def dashboard():
     return render_template("dashboard.html",data=result)
-@app.route("/student")
-def student():
-    return render_template("REP_LOGIN.html")
-
 
 
 if __name__=="__main__":

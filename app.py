@@ -1,11 +1,11 @@
 from flask import Flask, render_template
-import mysql.connector
+# import mysql.connector
 app=Flask(__name__)
 
-db = mysql.connector.connect(host="localhost" ,user="admin" , passwd="Thiru@9600",database="college")
-dbcursor=db.cursor()
-dbcursor.execute("SELECT * FROM attendances ")
-result=dbcursor.fetchall()
+# db = mysql.connector.connect(host="localhost" ,user="admin" , passwd="Thiru@9600",database="college")
+# dbcursor=db.cursor()
+# dbcursor.execute("SELECT * FROM attendances ")
+# result=dbcursor.fetchall()
 
     
 @app.route("/")
@@ -27,3 +27,4 @@ import os
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
+
